@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="txta">
+    <input type="text" id="txtb">
+     <button onclick="tongab();">
+         Tinh tong
+    </button>
+</body>
+<script>
+    function tongab() {
+        var txta = document.getElementById('name').value;
+        var txtb = document.getElementById('name').value;
+        if (txta == null || txta == '' || isNaN(txta)) {
+            alert('Vui long nhap so a hop le');
+            return;
+        }
+        if (txta == null || txtb == '' || isNaN(txtb)) {
+            alert('Vui long nhap so b hop le');
+            return;
+        }
+        alert(parseInt(txta) + parseInt(txtb));
+        
+
+    }
+</script>
+</html>
